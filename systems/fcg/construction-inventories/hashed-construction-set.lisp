@@ -67,7 +67,7 @@
                 do (setf (gethash hash (constructions-hash-table construction-set))
                          (cons construction
                                (gethash hash (constructions-hash-table construction-set))))
-                finally do
+                finally
                 (setf (trash construction-set) (remove trashed-cxn (trash construction-set))))
         (loop for hash in (hash construction (get-configuration construction-set :hash-mode))
               do (setf (gethash hash (constructions-hash-table construction-set))
