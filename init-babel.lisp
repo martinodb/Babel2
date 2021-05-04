@@ -96,3 +96,8 @@
 (let ((init-babel-user (babel-pathname :name "init-babel-user" :type "lisp")))
   (when (probe-file init-babel-user)
     (load init-babel-user)))
+
+
+;; martinodb: is this needed?
+(ql:quickload :cl-ppcre)
+;; end martinodb

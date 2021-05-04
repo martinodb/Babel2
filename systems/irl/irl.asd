@@ -4,7 +4,10 @@
 (defsystem :irl
   :description "Incremental Recruitment Language"
   :depends-on (:test-framework :utils :monitors
-               #+:hunchentoot-available-on-this-platform :web-interface)
+               #+:hunchentoot-available-on-this-platform :web-interface
+               
+               #:cl-ppcre
+               )
   :serial t
   :components 
   ((:file "package")
